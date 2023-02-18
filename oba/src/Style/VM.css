@@ -1,0 +1,24 @@
+.VisionAndMission {
+    padding-top: 2%;
+}
+
+.threeBoxes {
+    padding-top: 2%;
+}
+
+.iconRound {
+    background-color: maroon !important;
+    border-radius: 50%;
+    padding: 5% 5% 5% 5%;
+    color: white !important;
+}
+.divMid{
+    border-radius: 25px;
+    box-shadow: 1px 8px 20px rgb(214, 214, 214);
+    padding: 2%;
+}
+.divMid:hover {
+    box-shadow: 1px 8px 25px grey;
+    -webkit-transition:  box-shadow .6s ease-in;
+    transition: 0.3s;
+}
