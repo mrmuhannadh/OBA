@@ -1,22 +1,22 @@
 import React from 'react'
 import Slick from 'react-slick'
-import img1 from '../../Images/Home/Slider/img1.webp'
-import img2 from '../../Images/Home/Slider/img2.jpeg'
-import img3 from '../../Images/Home/Slider/img3.webp'
-import img4 from '../../Images/Home/Slider/img4.jpeg'
-import img5 from '../../Images/Home/Slider/img5.jpg'
-import img6 from '../../Images/Home/Slider/img6.jpg'
+import img1 from '../../Images/Home/Slider/1.jpg'
+import img2 from '../../Images/Home/Slider/2.jpg'
+import img3 from '../../Images/Home/Slider/3.jpg'
+import img4 from '../../Images/Home/Slider/4.jpg'
+import img5 from '../../Images/Home/Slider/5.jpg'
+import img6 from '../../Images/Home/Slider/6.jpg'
+import AOS from 'aos'
 
 const Slider = () => {
     var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
-        speed: 1000,
         autoplaySpeed: 2000,
         cssEase: "linear",
         responsive: [
@@ -47,7 +47,7 @@ const Slider = () => {
         ]
       };
     return (
-        <div className='SliderSec'>
+        <div className='SliderSec' data-aos="zoom-in-up">
 
             <Slick {...settings}>
                 
