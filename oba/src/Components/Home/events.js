@@ -22,7 +22,7 @@ const Events = () => {
                             }}
                         >
                             <div className='iconSet'>
-                                <Icon.ArrowUpRightCircle size={40} className='mYicon' />
+                                <Icon.ArrowUpRightCircle size={40} className='mYicon'  data-aos="fade-up-right"/>
                             </div>
                             <div className='textSet'>
 

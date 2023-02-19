@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import TopNavbar from '../Components/Bars/navbar'
 import { motion } from 'framer-motion'
 import { MutatingDots } from 'react-loader-spinner'
-import Footer from '../Components/Bars/Footer'
-import Events from '../Components/Home/events'
-import FirstDiv from '../Components/Home/FirstDiv'
-import Slider from '../Components/Home/slider'
-import VandM from '../Components/Home/VandM'
-import UpButton from '../Components/OtherButtons/UpButton'
-import '../Style/Home.css'
 import imgLogo from '../Images/Home/Logo.png'
-import imgBg from '../Images/Home/sclHome.jpg'
 
-const Index = () => {
+const School = () => {
     const [loading, setLoading] = useState(false);
 
     const page_load_time = performance.getEntriesByType("navigation")[0];
@@ -23,18 +16,15 @@ const Index = () => {
             setLoading(false);
         }, time)
     }, [])
+
     return (
-        <>
+        <div>
             <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86"></meta>
             {
                 loading ?
-                    <div className='row  d-flex flex-column justify-content-center align-items-center theRowToLoader'
-                        style={{
-                            backgroundColor: 'linear-gradient(265deg, rgba(209,143,55,0.5018382352941176) 0%, rgba(146,0,42,0.5) 100%, rgba(255,255,255,0.8855917366946778) 100%)'
-                        }}
-                    >
+                    <div className='row  d-flex flex-column justify-content-center align-items-center theRowToLoader'>
                         <div className='col-12 d-flex flex-column justify-content-end align-items-center loadingArea'>
-                            <img src={imgLogo} width={70} height={70} alt="logo" className='LoadLogo' />
+                            <img src={imgLogo} width={70} height={70} alt="logo" className='LoadLogo'/>
                             <MutatingDots
                                 height="100"
                                 width="100"
@@ -55,17 +45,12 @@ const Index = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 1 }}
                     >
-                        <FirstDiv />
-                        <VandM />
-                        <Slider />
-                        <Events />
-                        <Footer />
-                        <UpButton />
+                        <TopNavbar />
                     </motion.div>
             }
 
-        </>
+        </div>
     )
 }
 
-export default Index
+export default School

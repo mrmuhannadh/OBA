@@ -37,3 +37,29 @@
     transform: rotate(360deg);
   }
 }
+
+.loadingArea{
+  margin-top: 60vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65vh;
+  background: rgba(113, 133, 0, 0.0) !important;
+  z-index: 80;
+  position: absolute;
+  top:0%;
+}
+.theRowToLoader{
+  height: 100vh;
+  background: rgb(209,143,55);
+background: linear-gradient(265deg, rgba(209,143,55,0.25) 0%, rgba(146,0,42,0.25) 100%, rgba(255,255,255,0.8855917366946778) 100%);
+}
+
+.LoadLogo{
+  z-index: 50;
+  height: 20vh;
+  width: 18vh;
+  top:30vh;
+  position: absolute;
+  opacity: 1;
+}

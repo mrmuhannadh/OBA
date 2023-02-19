@@ -1,10 +1,16 @@
 .navItem {
     font-weight: bold;
+    color: darkgray;
+    text-decoration: none;
 }
 
 .navItem:focus {
-    color: darkgreen !important;
+    color: rgb(0, 0, 0) !important;
     text-decoration: underline;
+}
+
+.navItem:hover {
+    color: black
 }
 
 .myNav {
@@ -33,3 +39,12 @@
 .obaTopic {
     font-weight: bold;
 }
+
+.active {
+    text-decoration: underline;
+    color: black;
+}
+.topLogo{
+    height: 15vh;
+}
+

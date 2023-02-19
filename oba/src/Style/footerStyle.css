@@ -1,0 +1,56 @@
+.footerSet{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: #F8F8FF !important;
+}
+
+.sideOne{
+    padding-right: 5%;
+}
+.sideOne , .sideTwo{
+    text-align: left;
+}
+
+.myFormSet{
+    padding-top: 3%;
+}
+
+.formReqStar{
+    color:red;
+}
+
+.inqData{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}   
+
+.SecoundSet{
+    margin-top: 5vh;
+
+}
+
+.ThirdSet{
+    padding-top: 10vh;
+}
+
+.iconRoundFooter{
+    background-color: rgba(255,255, 255, 0.1) !important;
+
+    color: rgb(145, 0, 0) !important;
+
+}
+
+.btnSubmit{
+    margin-bottom: 3vh;
+    left:2vh;
+    width: fit-content;
+}
+
+.lowFooter{
+    padding-top: 1vh;
+    font-size: 1rem;
+}
+
+.Footerright{
+    text-align: right !important;
+}

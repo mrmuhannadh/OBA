@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btnToTop {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  z-index: 200;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  cursor: grab;
+}

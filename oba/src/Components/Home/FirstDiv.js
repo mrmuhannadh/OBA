@@ -3,6 +3,7 @@ import '../../Style/Home.css'
 import TopNavbar from '../Bars/navbar'
 import imgBg from '../../Images/Home/sclHome.jpg'
 import AOS from 'aos'
+import logo from '../../Images/Home/Logo.png'
 
 const FirstDiv = () => {
     useEffect(() => {
@@ -23,6 +24,7 @@ const FirstDiv = () => {
                     <div className='theDetails px-3'>
                         <div className='container'>
                             <div className='col-md-8 '>
+                                <img src={logo} alt="logo" className='topLogo'/>
                                 <p className='paraOne' data-aos="zoom-in-down">Al-Azhar National Collage</p>
                                 <h1 className='headingOne' data-aos="zoom-in">OLD BOYS ASSOCIATION</h1>
                                 <p data-aos="zoom-out-up">

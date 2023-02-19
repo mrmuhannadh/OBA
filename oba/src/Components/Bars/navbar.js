@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import '../../Style/navStyle.css'
+import { NavLink } from 'react-router-dom';
 
 const TopNavbar = () => {
     return (
@@ -25,11 +26,25 @@ const TopNavbar = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end align-items-center flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1" className='navItem'>Home</Nav.Link>
-                                    <Nav.Link href="#action2" className='navItem'>School</Nav.Link>
-                                    <Nav.Link href="#action2" className='navItem'>Link</Nav.Link>
-                                    <Nav.Link href="#action2">
-                                        <button className='btn btn-danger btnContact'>CONTACT US</button>
+                                    <Nav.Link className='navItem'>
+                                        <NavLink to="/" className='navItem'>
+                                            <i className="glyphicon glyphicon-home"></i> <span>Home</span>
+                                        </NavLink>
+                                    </Nav.Link>
+                                    <Nav.Link className='navItem'>
+                                        <NavLink to="/school" className='navItem'>
+                                            <i className="glyphicon glyphicon-home"></i> <span>School</span>
+                                        </NavLink>
+                                    </Nav.Link>
+                                    <Nav.Link className='navItem'>
+                                        <NavLink to="/events" className='navItem'>
+                                            <i className="glyphicon glyphicon-home"></i> <span>Events</span>
+                                        </NavLink>
+                                    </Nav.Link>
+                                    <Nav.Link className='navItem'>
+                                        <NavLink to="/contact" className='navItem'>
+                                            <i className="glyphicon glyphicon-home"></i> <span>Contact Us</span>
+                                        </NavLink>
                                     </Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
