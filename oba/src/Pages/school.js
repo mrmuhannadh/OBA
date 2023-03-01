@@ -24,7 +24,7 @@ const School = () => {
                 loading ?
                     <div className='row  d-flex flex-column justify-content-center align-items-center theRowToLoader'>
                         <div className='col-12 d-flex flex-column justify-content-end align-items-center loadingArea'>
-                            <img src={imgLogo} width={70} height={70} alt="logo" className='LoadLogo'/>
+                            <img src={imgLogo} width={70} height={70} alt="logo" className='LoadLogo' />
                             <MutatingDots
                                 height="100"
                                 width="100"

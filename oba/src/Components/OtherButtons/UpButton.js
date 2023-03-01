@@ -23,8 +23,6 @@ const UpButton = () => {
     return (
         <div>
             {backTopTopButton && (
-
-
                 <Icon.ArrowUpCircleFill className='btnToTop' size={40} onClick={scrollUp} />
             )}
 

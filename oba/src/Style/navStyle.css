@@ -48,3 +48,9 @@
     height: 15vh;
 }
 
+
+.navLogo{
+    max-width: 5%;
+    left:0%;
+    position: relative;
+}

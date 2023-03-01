@@ -24,8 +24,8 @@ const FirstDiv = () => {
                     <div className='theDetails px-3'>
                         <div className='container'>
                             <div className='col-md-8 '>
-                                <img src={logo} alt="logo" className='topLogo'/>
-                                <p className='paraOne' data-aos="zoom-in-down">Al-Azhar National Collage</p>
+                                <img src={logo} alt="logo" className='topLogo' />
+                                <p className='paraOne' data-aos="zoom-in">Al-Azhar National Collage</p>
                                 <h1 className='headingOne' data-aos="zoom-in">OLD BOYS ASSOCIATION</h1>
                                 <p data-aos="zoom-out-up">
                                     Online Grammar and Writing Checker To Help You Deliver Impeccable, Mistake-free Writing.
@@ -33,10 +33,10 @@ const FirstDiv = () => {
                                     Try It Out For Yourself! Eliminate Grammar Errors. Improve Word Choice
                                 </p>
                                 <button className='btn btn-default btnLearnMore'
-                                    data-aos="fade-right" 
+                                    data-aos="fade-right"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    
+
                                 >Learn More</button>
                             </div>
                         </div>

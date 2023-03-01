@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import '../../Style/navStyle.css'
 import { NavLink } from 'react-router-dom';
+import logo from '../../Images/Home/Logo.png'
 
 const TopNavbar = () => {
     return (
@@ -12,7 +13,11 @@ const TopNavbar = () => {
             {['md'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3 p-2 myNav">
                     <Container fluid>
-                        <Navbar.Brand href="#" className='obaTopic'>OBA</Navbar.Brand>
+                        <Navbar.Brand href="#" className='obaTopic'> 
+                            <img src={logo}
+                            className='navLogo'
+                            alt="logo"/>
+                            OBA</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}

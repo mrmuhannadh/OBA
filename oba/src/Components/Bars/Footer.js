@@ -13,10 +13,10 @@ const Footer = () => {
             <div className='col-md-8 sideOne'>
               <div className='row'>
                 <div className='col-md-12 d-flex flex-column justify-content-start align-items-start'>
-                  <h3 data-aos="zoom-in-up">Contact with us</h3>
+                  <h3>Contact with us</h3>
                 </div>
               </div>
-              <div className='row myFormSet' data-aos="zoom-out-up">
+              <div className='row myFormSet'>
                 <div className='col-md-6'>
                   <form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -63,14 +63,13 @@ const Footer = () => {
                   </Form.Group>
                 </div>
                 <div className='row'>
-                <button className='btn btn-danger btnSubmit mx-3'>Submit</button>
+                  <button className='btn btn-danger btnSubmit mx-3'>Submit</button>
                 </div>
-               
+
               </div>
             </div>
             <div className='col-md-3 col-sm-4 s ideTwo mx-4' >
-              <div className='FirstSet'
-                data-aos="zoom-in-up">
+              <div className='FirstSet'>
                 <h3>Email Us</h3>
                 <div className='inqData'>
                   <p>For inquiries only</p>
@@ -79,7 +78,6 @@ const Footer = () => {
               </div>
 
               <div className='SecoundSet'
-                data-aos="zoom-in-up"
               >
                 <h3>Call Us</h3>
                 <div className='inqData'>
@@ -89,8 +87,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className='ThirdSet' data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
+              <div className='ThirdSet'
               >
                 <div className='row'>
                   <div className='col'>

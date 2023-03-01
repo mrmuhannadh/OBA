@@ -22,7 +22,7 @@ const Events = () => {
                             }}
                         >
                             <div className='iconSet'>
-                                <Icon.ArrowUpRightCircle size={40} className='mYicon'  data-aos="fade-up-right"/>
+                                <Icon.ArrowUpRightCircle size={40} className='mYicon' data-aos="fade-up-right" />
                             </div>
                             <div className='textSet'>
 
@@ -33,7 +33,7 @@ const Events = () => {
                         </div>
                     </div>
                     <div className='col-md-4 col-sm-4'>
-                    <div className='box mbox' data-aos="fade-up"
+                        <div className='box mbox' data-aos="fade-up"
                             style={{
                                 backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(${img2})`,
                                 backgroundPosition: 'center',
@@ -53,8 +53,8 @@ const Events = () => {
                         </div>
                     </div>
                     <div className='col-md-4 col-sm-4'>
-                    <div className='box mbox'  data-aos="fade-up-left"
-                            style={{ 
+                        <div className='box mbox' data-aos="fade-up-left"
+                            style={{
                                 backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(${img3})`,
                                 backgroundPosition: 'center',
                                 backgroundSize: 'cover',
@@ -75,7 +75,7 @@ const Events = () => {
                 </div>
                 <div className='row grid mRow'>
                     <div className='col-md-4 col-sm-4'>
-                    <div className='box mbox'  data-aos="fade-up-right"
+                        <div className='box mbox' data-aos="fade-up-right"
                             style={{
                                 backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(${img4})`,
                                 backgroundPosition: 'center',
@@ -95,7 +95,7 @@ const Events = () => {
                         </div>
                     </div>
                     <div className='col-md-4 col-sm-4'>
-                    <div className='box mbox'  data-aos="fade-up"
+                        <div className='box mbox' data-aos="fade-up"
                             style={{
                                 backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(${img5})`,
                                 backgroundPosition: 'center',
@@ -115,7 +115,7 @@ const Events = () => {
                         </div>
                     </div>
                     <div className='col-md-4 col-sm-4'>
-                        <div className='box mbox'  data-aos="fade-up-left">
+                        <div className='box mbox' data-aos="fade-up-left">
                             Hi
                         </div>
                     </div>
