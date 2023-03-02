@@ -12,6 +12,7 @@
     margin-top: 7%;
     position: relative;
 }
+
 .setMember2 {
     max-height: 75vh;
     max-width: 155px;
@@ -23,8 +24,40 @@
     position: relative;
 }
 
+.setMemberMobile {
+    max-height: 75vh;
+    max-width: 35vw;
+    min-width: 35vw;
+    min-height: 75vh;
+    background-color: aqua !important;
+    border-radius: 95px;
+    margin-top: 7%;
+    margin-bottom: 1%;
+    position: relative;
+    margin: 0% 2% 0% 2%;
+}
+
 .myMarquee {
     height: 100vh;
+}
+
+.myRowNew {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    right: 0%;
+}
+
+.myMarquee:hover{
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.myMarqueeMobile {
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .myColSlider {
@@ -99,10 +132,11 @@ p {
 
 
 /*Right section*/
-.containerMember{
+.containerMember {
     margin-right: 6%;
     margin-left: 6%;
 }
+
 .sectionRight {
     height: 100vh;
     padding-top: 6%;
@@ -124,7 +158,7 @@ p {
     width: fit-content;
 }
 
-.btnMembers:hover{
+.btnMembers:hover {
     color: #ffffff;
     background: #051320;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -132,4 +166,4 @@ p {
 
 .sectionRight::-webkit-scrollbar {
     display: none;
-  }
+}

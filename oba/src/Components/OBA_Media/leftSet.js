@@ -9,13 +9,14 @@ const LeftSet = () => {
         <>
             <div className='containerMember'>
                 <div className='row'>
-                    <div className='col-6 actionCol'>
+                    <div className='col-6 actionCol d-none d-sm-block'>
                         <div className='row g-1'>
                             <div className='col'>
                                 <marquee direction="down"
                                     behavior="alternate"
                                     loop="infinite"
                                     className="myMarquee text-center"
+                                    
                                 >
 
                                     <div className='setMember member1 '>
@@ -82,7 +83,8 @@ const LeftSet = () => {
                         </div>
 
                     </div>
-                    <div className='col-6 sectionRight justify-content-start px-5'>
+
+                    <div className='col-md-6 col-sm-12 sectionRight justify-content-start px-5'>
                         <div className='row'>
                             <div className='col'>
                                 <h3 className='py-2'>About Media Unit</h3>
@@ -94,7 +96,59 @@ const LeftSet = () => {
                             </div>
 
                         </div>
+                        <div className='col-sm-12 d-block d-sm-none'>
+                            <div className=''>
+                                <marquee
+                                    direction="left"
+                                    className='myMarqueeMobile'
+                                    behavior="alternate"
+                                    loop="infinite"
+                                    scrollamount="5"
+                                >
+                                    <div className='myRowNew'>
+                                        <div className='setMemberMobile member1 g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            <img src={img1}
+                                                alt="Muhannadh"
+                                                className='actionImage portrait'
+                                            />
+                                        </div>
+                                        <div className='setMemberMobile member2  g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            <img src={img1}
+                                                alt="Muhannadh"
+                                                className='actionImage portrait'
+                                            />
+                                        </div>
+                                        <div className='setMemberMobile member3  g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            <img src={img1}
+                                                alt="Muhannadh"
+                                                className='actionImage portrait'
+                                            />
+                                        </div>
+                                        <div className='setMemberMobile member4  g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            
+                                        </div>
+                                        <div className='setMemberMobile member5 g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            
+                                        </div>
+                                        <div className='setMemberMobile member6 g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            
+                                        </div>
+                                        <div className='setMemberMobile member7 g-1'>
+                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                                            
+                                        </div>
 
+                                        
+                                    </div>
+                                </marquee>
+                            </div>
+                        </div>
                         <div className='row py-1'>
                             <h3 className='py-2'>Mission of the unit</h3>
                             <p>Refinement of creative and media energies in a knowledge society that stimulates learning and creativity through the use of the latest means and technologies,
@@ -103,7 +157,7 @@ const LeftSet = () => {
                             </p>
                         </div>
                         <div className='row membersLayout'>
-                        <h3 className='py-1'>Members</h3>
+                            <h3 className='py-1'>Members</h3>
                             <button className='btn btnMembers'>
                                 Irshard Abushaly
                             </button>
