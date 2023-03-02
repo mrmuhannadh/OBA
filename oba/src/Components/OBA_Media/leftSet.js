@@ -7,10 +7,10 @@ import img1 from '../../Images/Media/myimage.png'
 const LeftSet = () => {
     return (
         <>
-            <div className='container'>
+            <div className='containerMember'>
                 <div className='row'>
                     <div className='col-6 actionCol'>
-                        <div className='row g-2'>
+                        <div className='row g-1'>
                             <div className='col'>
                                 <marquee direction="down"
                                     behavior="alternate"
@@ -25,7 +25,7 @@ const LeftSet = () => {
                                             className='actionImage portrait'
                                         />
                                     </div>
-                                    <div className='setMember member2'>
+                                    <div className='setMember2 member2'>
                                         <p className='actionTopic'>M.R. Muhannadh</p>
                                         <img src={img1}
                                             alt="Muhannadh"
@@ -46,12 +46,13 @@ const LeftSet = () => {
                                     behavior="alternate"
                                     loop="infinite"
                                     className="myMarquee"
+                                    scrollamount="8"
                                 >
 
                                     <div className='setMember member4'>
 
                                     </div>
-                                    <div className='setMember member5'>
+                                    <div className='setMember2 member5'>
 
                                     </div>
                                     <div className='setMember member6'>
@@ -64,9 +65,10 @@ const LeftSet = () => {
                                     behavior="alternate"
                                     loop="infinite"
                                     className="myMarquee"
+                                    scrollamount="10"
                                 >
 
-                                    <div className='setMember member7'>
+                                    <div className='setMember2 member7'>
 
                                     </div>
                                     <div className='setMember member8'>
@@ -93,15 +95,42 @@ const LeftSet = () => {
 
                         </div>
 
-                        <div className='row py-3'>
+                        <div className='row py-1'>
                             <h3 className='py-2'>Mission of the unit</h3>
                             <p>Refinement of creative and media energies in a knowledge society that stimulates learning and creativity through the use of the latest means and technologies,
                                 in adedition to enhance communication and build bridges of cooperation between the College and the internal and external public in addition to managing and promoting marketing
                                 and public relations strategies in collaboration with relevant departments for the purpose of increasing the goals and activities awareness and awareness among target groups.
                             </p>
                         </div>
-                        <div className='row'>
-                        <h3 className='py-2'>Members</h3>
+                        <div className='row membersLayout'>
+                        <h3 className='py-1'>Members</h3>
+                            <button className='btn btnMembers'>
+                                Irshard Abushaly
+                            </button>
+                            <button className='btn btnMembers'>
+                                Ihshan Thahir
+                            </button>
+                            <button className='btn btnMembers'>
+                                Shiraz Ahmed
+                            </button>
+                            <button className='btn btnMembers'>
+                                Muhannadh
+                            </button>
+                            <button className='btn btnMembers'>
+                                Abdullah
+                            </button>
+                            <button className='btn btnMembers'>
+                                Mohamed Munshid
+                            </button>
+                            <button className='btn btnMembers'>
+                                Mohamed Shukry
+                            </button>
+                            <button className='btn btnMembers'>
+                                Mohamed Farhan
+                            </button>
+                            <button className='btn btnMembers'>
+                                Arshard Khan
+                            </button>
                         </div>
                     </div>
                 </div>
