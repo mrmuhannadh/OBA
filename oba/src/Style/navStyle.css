@@ -1,6 +1,6 @@
 .navItem {
-    font-weight: bold;
-    color: darkgray;
+
+    color: black !important;
     text-decoration: none;
 }
 
@@ -40,17 +40,48 @@
     font-weight: bold;
 }
 
+
 .active {
     text-decoration: underline;
     color: black;
 }
-.topLogo{
-    height: 15vh;
+
+.topLogo {
+    height: 18vh;
+    margin-bottom: 10px;
+}
+
+.colorChange {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.navbarCustom {
+    transition: all 0.2s ease-in-out;
+    transition-timing-function: linear;
+    background: rgb(195, 195, 195, 0) !important;
 }
 
 
-.navLogo{
-    max-width: 5%;
-    left:0%;
-    position: relative;
+.navLogo {
+    max-width: 4vw;
+    left: 50%;
+    position: absolute;
+}
+
+.btnContactUs {
+    background: darkblue !important;
+    color: white;
+    border-radius: 25px;
+}
+
+.homeIcon:hover {
+    filter: drop-shadow(0px 2px 2px black);
+    transition: all 0.3s ease-in-out;
+
 }

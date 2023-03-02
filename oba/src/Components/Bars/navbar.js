@@ -1,23 +1,37 @@
-import React from 'react'
+
+import React, { useState, Fragment } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../../Style/navStyle.css'
 import { NavLink } from 'react-router-dom';
-import logo from '../../Images/Home/Logo.png'
+import homeIcon from '../../Images/Home/Nav/home.png'
 
 const TopNavbar = () => {
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 80) {
+            setColorchange(true);
+        }
+        else {
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return (
         <>
             {['md'].map((expand) => (
-                <Navbar key={expand} bg="light" expand={expand} className="mb-3 p-2 myNav">
+                <Navbar key={expand} expand={expand} className={colorChange ? 'navbar colorChange mb-3 p-2' : 'navbarCustom mb-3 p-2'} fixed="top" >
                     <Container fluid>
-                        <Navbar.Brand href="#" className='obaTopic'> 
-                            <img src={logo}
-                            className='navLogo'
-                            alt="logo"/>
-                            OBA</Navbar.Brand>
+                        <Navbar.Brand href="#" className='obaTopic'>
+                            <span className='d-none d-sm-block'>OBA</span>
+                            <img src={homeIcon}
+                                alt="home icon"
+                                className='homeIcon col-sm-1 d-lg-none'
+                            />
+                        </Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -29,26 +43,53 @@ const TopNavbar = () => {
                                     OBA
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
+
                             <Offcanvas.Body>
-                                <Nav className="justify-content-end align-items-center flex-grow-1 pe-3">
-                                    <Nav.Link className='navItem'>
+                                <Nav className="justify-content-end align-items-center flex-grow-1 mx-2 pe-1">
+                                    <Nav.Link className='navItem px-5'>
                                         <NavLink to="/" className='navItem'>
-                                            <i className="glyphicon glyphicon-home"></i> <span>Home</span>
+                                            <i className="glyphicon glyphicon-home"></i> <span>
+                                                <img src={homeIcon}
+                                                    alt="home icon"
+                                                    className='homeIcon'
+                                                />
+                                            </span>
                                         </NavLink>
                                     </Nav.Link>
-                                    <Nav.Link className='navItem'>
+                                    <Nav.Link className='navItem px-4'>
                                         <NavLink to="/school" className='navItem'>
                                             <i className="glyphicon glyphicon-home"></i> <span>School</span>
                                         </NavLink>
                                     </Nav.Link>
-                                    <Nav.Link className='navItem'>
+                                    <div className='navItem px-3'>
+                                        <NavDropdown title="OBA">
+                                            <NavDropdown.Item href="#action/3.1">Committe</NavDropdown.Item>
+                                            <NavDropdown.Item href="/media">
+                                                Media
+                                            </NavDropdown.Item>
+                                        </NavDropdown>
+                                    </div>
+                                    <div className='navItem px-3'>
+                                        <NavDropdown title="Events">
+                                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                            <NavDropdown.Item href="#action/3.2">
+                                                Another action
+                                            </NavDropdown.Item>
+                                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                            <NavDropdown.Divider />
+                                            <NavDropdown.Item href="#action/3.4">
+                                                Separated link
+                                            </NavDropdown.Item>
+                                        </NavDropdown>
+                                    </div>
+                                    <Nav.Link className='navItem px-3'>
                                         <NavLink to="/events" className='navItem'>
-                                            <i className="glyphicon glyphicon-home"></i> <span>Events</span>
+                                            <i className="glyphicon glyphicon-home"></i> <span>Store</span>
                                         </NavLink>
                                     </Nav.Link>
                                     <Nav.Link className='navItem'>
-                                        <NavLink to="/contact" className='navItem'>
-                                            <i className="glyphicon glyphicon-home"></i> <span>Contact Us</span>
+                                        <NavLink to="/contact" className='navItem px-3'>
+                                            <i className="glyphicon glyphicon-home"></i> <span className='btn btn-success btnComm'>Contact Us</span>
                                         </NavLink>
                                     </Nav.Link>
                                 </Nav>

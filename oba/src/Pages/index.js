@@ -56,9 +56,12 @@ const Index = () => {
                         exit={{ opacity: 1 }}
                     >
                         <FirstDiv />
+                       {/* 
                         <VandM />
+                    
                         <Slider />
                         <Events />
+                        */}
                         <Footer />
                         <UpButton />
                     </motion.div>

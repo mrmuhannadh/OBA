@@ -5,8 +5,29 @@
     background-color: red !important;
 }
 
+.HomeSlicker {
+    max-width: 50vw;
+    position: relative;
+    background: red !important;
+}
+
+.mySliderTop {
+    max-height: 50vh;
+    max-width: 70vw;
+}
+
+.imgSliderTop {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    border-radius: 50px;
+    background-color: red !important;
+}
+
 .contentDiv {
-    background: linear-gradient(132deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.97) 45%, rgba(255, 255, 255, 0) 100%) !important;
+    background: linear-gradient(132deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.93) 55%, rgba(255, 255, 255, 0.5) 100%) !important;
     min-height: 100vh;
     top: 0%;
     left: 0%;
@@ -14,7 +35,6 @@
 }
 
 .topNavStyle {
-
     z-index: 100;
 }
 
@@ -29,6 +49,7 @@
     top: 0%;
     left: 0%;
     min-width: 100%;
+
 }
 
 .paraOne {
@@ -37,6 +58,7 @@
 
 .headingOne {
     font-size: 3rem;
+    font-family: "DM Serif Display";
 }
 
 .btnLearnMore {
@@ -49,6 +71,70 @@
     z-index: 100;
 }
 
+.homeIcon {
+    width: 7vh;
+}
+
+.btnComm {
+    background: #051320 !important;
+    color: #fffffF !important;
+    border-radius: 30px;
+}
+
+.myRow {
+    bottom: 0;
+    top: 90vh;
+    position: absolute;
+    min-width: 70vw;
+}
+
+.mouseDiv {
+    width: 5vw;
+    height: 5vw;
+    background: #051320 !important;
+    display: block;
+    border-radius: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all 0.3s ease-in-out;
+}
+
+.handDiv {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #051320 !important;
+    border-radius: 50%;
+    bottom: 0%;
+}
+
+.bottomLine {
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+}
+
+.mouseIcon {
+    color: white !important;
+    font-size: 2rem;
+}
+
+.mouseIconCustom {
+    display: none;
+    border-radius: 50%;
+    transition: all 5s ease-in-out;
+}
+
+.handIcon {
+    color: white !important;
+    font-size: 100%;
+}
+
+.iconDiv {
+    color: #051320;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /*Slider*/
 .SliderSec {
@@ -80,29 +166,31 @@
 }
 
 .mbox {
-    background-color:red;
+    background-color: red;
     width: 100%;
     aspect-ratio: 3/3;
     border-radius: 25px;
     margin-top: 5px;
-    color:white;
+    color: white;
     font-weight: bold;
     position: relative;
     box-shadow: 1px 8px 20px rgb(214, 214, 214);
 }
-.mbox:hover{
+
+.mbox:hover {
     box-shadow: 1px 8px 45px grey;
-    -webkit-transition:  box-shadow .6s ease-in;
+    -webkit-transition: box-shadow .6s ease-in;
     transition: 0.3s;
-    
+
 }
-.mbox:hover .textSet{
+
+.mbox:hover .textSet {
     backdrop-filter: blur(4px);
-    -webkit-transition:  backdrop-filter .3s ease-in-out;
+    -webkit-transition: backdrop-filter .3s ease-in-out;
     border-radius: 20px;
 }
 
-.mYicon{
+.mYicon {
     color: white !important;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
@@ -110,32 +198,32 @@
     top: 25%;
     right: 12%;
     display: none;
-    -webkit-transition:  display .8s ease;
+    -webkit-transition: display .8s ease;
     transition: 0.3s;
 }
 
-.mbox:hover .mYicon{
+.mbox:hover .mYicon {
     display: block;
-    -webkit-transition:  backdrop-filter 5s ease-in-out;
-    
+    -webkit-transition: backdrop-filter 5s ease-in-out;
+
 }
+
 .mRow {
     margin-bottom: 2%;
 }
 
-.textSet{
+.textSet {
     position: absolute;
     bottom: 2%;
     left: 5%;
     min-width: 80%;
 }
 
-.iconSet{
+.iconSet {
     position: absolute;
     top: 10%;
     right: 2px;
     min-width: 80%;
-    color:wheat;
+    color: wheat;
     padding-right: 0%;
 }
-

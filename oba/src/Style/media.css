@@ -1,0 +1,82 @@
+.actionCol {
+    min-height: 50vh;
+
+
+}
+
+.setMember {
+    max-height: 50vh;
+    min-height: 50vh;
+    background-color: aqua !important;
+    border-radius: 60px;
+    width: 100%;
+    margin-top: 5px;
+     position: relative;
+}
+
+.myMarquee {
+    height: 100vh;
+}
+
+.myColSlider {
+    left: 0;
+    right: 0;
+}
+
+.member1 {
+    background: #85144b !important;
+}
+
+.member2 {
+    background: #735F32 !important;
+}
+
+.member3 {
+    background: #3C2A21 !important;
+}
+
+.member4 {
+    background: #0A2647 !important;
+}
+
+.member5 {
+    background: #4E9F3D !important;
+}
+
+.member6 {
+    background: #395B64 !important;
+}
+
+.member7 {
+    background: #810CA8 !important;
+}
+
+.member8 {
+    background: #16003B !important;
+}
+
+.member9 {
+    background: #950101 !important;
+}
+
+.actionTopic{
+    position: absolute;
+    top:10%;
+    left:10%;
+    text-align: center;
+    font-family: "DM Serif Display";
+    color: white;
+    font-weight: bold;
+}
+.actionImage {
+    width: 100%;
+    bottom: 0%;
+    height: 80%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    object-fit: cover;
+}
