@@ -10,7 +10,7 @@ const LeftSet = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-6 actionCol'>
-                        <div className='row'>
+                        <div className='row g-2'>
                             <div className='col'>
                                 <marquee direction="down"
                                     behavior="alternate"
@@ -26,14 +26,14 @@ const LeftSet = () => {
                                         />
                                     </div>
                                     <div className='setMember member2'>
-                                    <p className='actionTopic'>M.R. Muhannadh</p>
+                                        <p className='actionTopic'>M.R. Muhannadh</p>
                                         <img src={img1}
                                             alt="Muhannadh"
                                             className='actionImage shadow'
                                         />
                                     </div>
                                     <div className='setMember member3'>
-                                    <p className='actionTopic'>M.R. Muhannadh</p>
+                                        <p className='actionTopic'>M.R. Muhannadh</p>
                                         <img src={img1}
                                             alt="Muhannadh"
                                             className='actionImage shadow'
@@ -80,7 +80,30 @@ const LeftSet = () => {
                         </div>
 
                     </div>
-                    <div className='col-6'>Two</div>
+                    <div className='col-6 sectionRight justify-content-start px-5'>
+                        <div className='row'>
+                            <div className='col'>
+                                <h3 className='py-2'>About Media Unit</h3>
+                                <p>The Media Unit of AACC OBA Media Unit was founded in the year 2023 as the Mass Media Unit under
+                                    the Guidance of the AACC OBA Committee. The media unit of AACC OBA offers the student body ample
+                                    opportunities to develop their technical and communication skills. We help them cultivate their skills
+                                    in written media, graphic designing, audio, and video editing, and on occasion event Management.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div className='row py-3'>
+                            <h3 className='py-2'>Mission of the unit</h3>
+                            <p>Refinement of creative and media energies in a knowledge society that stimulates learning and creativity through the use of the latest means and technologies,
+                                in adedition to enhance communication and build bridges of cooperation between the College and the internal and external public in addition to managing and promoting marketing
+                                and public relations strategies in collaboration with relevant departments for the purpose of increasing the goals and activities awareness and awareness among target groups.
+                            </p>
+                        </div>
+                        <div className='row'>
+                        <h3 className='py-2'>Members</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

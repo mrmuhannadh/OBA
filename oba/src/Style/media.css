@@ -1,17 +1,15 @@
 .actionCol {
     min-height: 50vh;
-
-
 }
 
 .setMember {
-    max-height: 50vh;
-    min-height: 50vh;
+    max-height: 60vh;
+    min-height: 60vh;
     background-color: aqua !important;
     border-radius: 60px;
     width: 100%;
     margin-top: 5px;
-     position: relative;
+    position: relative;
 }
 
 .myMarquee {
@@ -25,10 +23,12 @@
 
 .member1 {
     background: #85144b !important;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .member2 {
     background: #735F32 !important;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .member3 {
@@ -59,15 +59,20 @@
     background: #950101 !important;
 }
 
-.actionTopic{
+p{
+    font-size: 16px;
+}
+
+.actionTopic {
     position: absolute;
-    top:10%;
-    left:10%;
+    top: 10%;
+    left: 10%;
     text-align: center;
     font-family: "DM Serif Display";
     color: white;
     font-weight: bold;
 }
+
 .actionImage {
     width: 100%;
     bottom: 0%;
@@ -79,4 +84,12 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     object-fit: cover;
+}
+
+
+
+/*Right section*/
+.sectionRight{
+    padding-top: 6%;
+    text-align: left;
 }
