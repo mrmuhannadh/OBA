@@ -1,7 +1,10 @@
 import React from 'react'
 import '../../Style/footerStyle.css'
 import Form from 'react-bootstrap/Form';
-import * as Icon from 'react-bootstrap-icons'
+import fb from '../../Images/Home/Icons/FB.svg'
+import whatsapp from '../../Images/Home/Icons/Whatsapp.svg'
+import insta from '../../Images/Home/Icons/Instagram.svg'
+import linked from '../../Images/Home/Icons/Linkdin.svg'
 import AOS from 'aos'
 
 const Footer = () => {
@@ -21,7 +24,7 @@ const Footer = () => {
                   <form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Name<span className='formReqStar'>*</span></Form.Label>
-                      <input type="text" className="form-control" name="name" placeholder='Your Name' required />
+                      <input type="text" className="form-control myInput" name="name" placeholder='Your Name' required />
                       <Form.Text className="text-muted">
                         Please enter valid name
                       </Form.Text>
@@ -29,7 +32,7 @@ const Footer = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email<span className='formReqStar'>*</span></Form.Label>
-                      <input type="email" className="form-control" name="name" placeholder='someone@mail.com' required />
+                      <input type="email" className="form-control myInput" name="name" placeholder='someone@mail.com' required />
                       <Form.Text className="text-muted">
                         Please enter valid email
                       </Form.Text>
@@ -39,7 +42,7 @@ const Footer = () => {
                 <div className='col-md-6 '>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Phone<span className='formReqStar'>*</span></Form.Label>
-                    <input type="number" className="form-control" name="name" placeholder='07########' maxlength="6" required />
+                    <input type="number" className="form-control myInput" name="name" placeholder='07########' maxlength="6" required />
                     <Form.Text className="text-muted">
                       Please enter valid phone number
                     </Form.Text>
@@ -47,7 +50,7 @@ const Footer = () => {
 
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Subject<span className='formReqStar'>*</span></Form.Label>
-                    <input type="text" className="form-control" name="name" placeholder='Eg: New Membership' required />
+                    <input type="text" className="form-control myInput" name="name" placeholder='Eg: New Membership' required />
                     <Form.Text className="text-muted">
                       Give a heading for your message
                     </Form.Text>
@@ -56,7 +59,7 @@ const Footer = () => {
                 <div className='col-md-12'>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Description<span className='formReqStar'>*</span></Form.Label>
-                    <textarea rows="6" className="form-control" name="name" placeholder='Eg: I need help for new membership' required />
+                    <textarea rows="6" className="form-control myInput" name="name" placeholder='Eg: I need help for new membership' required />
                     <Form.Text className="text-muted">
                       Give a heading for your message
                     </Form.Text>
@@ -92,30 +95,42 @@ const Footer = () => {
                 <div className='row'>
                   <div className='col'>
                     <div>
-                      <Icon.Facebook size={35} className='iconRoundFooter' />
+                      <img src={fb}
+                        alt="fb"
+                        className='icon fbicon'
+                      />
                     </div>
                   </div>
                   <div className='col'>
                     <div>
-                      <Icon.Instagram size={35} className='iconRoundFooter' />
+                      <img src={insta}
+                        alt="fb"
+                        className='icon fbicon'
+                      />
                     </div>
                   </div>
                   <div className='col'>
                     <div>
-                      <Icon.Twitter size={35} className='iconRoundFooter' />
+                      <img src={linked}
+                        alt="fb"
+                        className='icon fbicon'
+                      />
                     </div>
                   </div>
                   <div className='col'>
                     <div>
-                      <Icon.Whatsapp size={35} className='iconRoundFooter' />
+                      <img src={whatsapp}
+                        alt="fb"
+                        className='icon fbicon'
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='row lowFooter'>
-            <div className='col d-flex content-align-start'>
+          <div className='row lowFooter py-3'>
+            <div className='col d-flex content-align-start text-nowrap'>
               &copy; 2023, Design by OBA Media Unit
             </div>
             <div className='col d-flex align-items-end flex-column'>

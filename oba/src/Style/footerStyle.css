@@ -1,8 +1,13 @@
 .footerSet{
     padding-top: 2%;
     padding-bottom: 2%;
-    background: #F8F8FF !important;
+    background: #E3E2E2 !important;
     position: relative;
+}
+
+.myInput{
+    background: rgba(0, 0, 0, 0.1);
+    
 }
 
 .sideOne{
@@ -36,15 +41,18 @@
 
 .iconRoundFooter{
     background-color: rgba(255,255, 255, 0.1) !important;
-
     color: rgb(145, 0, 0) !important;
-
 }
 
 .btnSubmit{
     margin-bottom: 3vh;
     left:2vh;
     width: fit-content;
+    background: #051320;
+    border-radius: 24px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
 }
 
 .lowFooter{

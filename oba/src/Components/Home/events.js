@@ -4,6 +4,7 @@ import img2 from '../../Images/Home/Events/2.jpg'
 import img3 from '../../Images/Home/Events/3.jpg'
 import img4 from '../../Images/Home/Events/4.jpg'
 import img5 from '../../Images/Home/Events/6.jpg'
+import imgmore from '../../Images/Home/Events/more.png'
 import * as Icon from 'react-bootstrap-icons'
 import AOS from 'aos'
 
@@ -115,8 +116,14 @@ const Events = () => {
                         </div>
                     </div>
                     <div className='col-md-4 col-sm-4'>
-                        <div className='box mbox' data-aos="fade-up-left">
-                            Hi
+                        <div className='box mbox' data-aos="fade-up-left"
+                        style={{
+                            backgroundImage: `url(${imgmore}`,
+                            backgroundPosition: 'center',
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat'
+                        }}>
+                        
                         </div>
                     </div>
                 </div>

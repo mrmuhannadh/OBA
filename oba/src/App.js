@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "@fontsource/inter"
+import "@fontsource/dm-serif-display"
 
 import {
   BrowserRouter as Router,

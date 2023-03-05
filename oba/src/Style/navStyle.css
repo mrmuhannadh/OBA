@@ -1,7 +1,8 @@
 .navItem {
-
     color: black !important;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .navItem:focus {
@@ -23,8 +24,8 @@
     top: 0;
     min-width: 100%;
     backdrop-filter: blur(4px);
-    z-index: 150;
 }
+
 
 .btnContact {
     background: rgba(255, 255, 255, 0.2);
@@ -46,11 +47,6 @@
     color: black;
 }
 
-.topLogo {
-    height: 18vh;
-    margin-bottom: 10px;
-}
-
 .colorChange {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -64,7 +60,17 @@
 .navbarCustom {
     transition: all 0.2s ease-in-out;
     transition-timing-function: linear;
-    background: rgb(195, 195, 195, 0) !important;
+    /*
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2.7px);
+    
+    -webkit-backdrop-filter: blur(2.7px);
+    */
+    top: 0;
+    position: absolute;
+    z-index: 150;
+    right: 0;
+    min-width: 100vw;
 }
 
 

@@ -3,20 +3,34 @@ import TopNavbar from '../Bars/navbar'
 import '../../Style/media.css'
 import Marquee from "react-fast-marquee";
 import img1 from '../../Images/Media/myimage.png'
+import Slider from "react-slick";
 
 const LeftSet = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        initialSlide: 0,
+        slidesToScroll: 1,
+        cssEase: "linear",
+        pauseOnHover: true,
+        nextArrow: null,
+        prevArrow: null
+    };
     return (
-        <>
+        <div className='mediaPage'>
             <div className='containerMember'>
                 <div className='row'>
-                    <div className='col-6 actionCol d-none d-sm-block'>
-                        <div className='row g-1'>
+                    <div className='col-5 actionCol d-none d-sm-block'>
+                        <div className='row g-0'>
                             <div className='col'>
                                 <marquee direction="down"
                                     behavior="alternate"
                                     loop="infinite"
                                     className="myMarquee text-center"
-                                    
                                 >
 
                                     <div className='setMember member1 '>
@@ -83,7 +97,7 @@ const LeftSet = () => {
                         </div>
 
                     </div>
-
+                    <div className='col-md-1'></div>
                     <div className='col-md-6 col-sm-12 sectionRight justify-content-start px-5'>
                         <div className='row'>
                             <div className='col'>
@@ -97,56 +111,48 @@ const LeftSet = () => {
 
                         </div>
                         <div className='col-sm-12 d-block d-sm-none'>
-                            <div className=''>
-                                <marquee
-                                    direction="left"
-                                    className='myMarqueeMobile'
-                                    behavior="alternate"
-                                    loop="infinite"
-                                    scrollamount="5"
-                                >
-                                    <div className='myRowNew'>
-                                        <div className='setMemberMobile member1 g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
+                            <div className='mySet'>
+                                <div className='mySetInside'>
+                                    <Slider {...settings}>
+                                        <div className='setMemberMobile member1  g-1'>
                                             <img src={img1}
                                                 alt="Muhannadh"
-                                                className='actionImage portrait'
+                                                className='actionImageMobile portrait'
                                             />
                                         </div>
                                         <div className='setMemberMobile member2  g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
                                             <img src={img1}
                                                 alt="Muhannadh"
-                                                className='actionImage portrait'
+                                                className='actionImageMobile portrait'
                                             />
                                         </div>
                                         <div className='setMemberMobile member3  g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
                                             <img src={img1}
                                                 alt="Muhannadh"
-                                                className='actionImage portrait'
+                                                className='actionImageMobile portrait'
                                             />
                                         </div>
                                         <div className='setMemberMobile member4  g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
-                                            
+                                            <img src={img1}
+                                                alt="Muhannadh"
+                                                className='actionImageMobile portrait'
+                                            />
                                         </div>
-                                        <div className='setMemberMobile member5 g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
-                                            
+                                        <div className='setMemberMobile member5  g-1'>
+                                            <img src={img1}
+                                                alt="Muhannadh"
+                                                className='actionImageMobile portrait'
+                                            />
                                         </div>
-                                        <div className='setMemberMobile member6 g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
-                                            
+                                        <div className='setMemberMobile member6  g-1'>
+                                            <img src={img1}
+                                                alt="Muhannadh"
+                                                className='actionImageMobile portrait'
+                                            />
                                         </div>
-                                        <div className='setMemberMobile member7 g-1'>
-                                            <p className='actionTopic '>M.R. Muhannadh</p>
-                                            
-                                        </div>
+                                    </Slider>
+                                </div>
 
-                                        
-                                    </div>
-                                </marquee>
                             </div>
                         </div>
                         <div className='row py-1'>
@@ -189,7 +195,7 @@ const LeftSet = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

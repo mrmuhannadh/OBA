@@ -1,11 +1,18 @@
-import React, { useEffect,useState, Fragment } from 'react'
+import React, { useEffect, useState, Fragment } from 'react'
 import '../../Style/Home.css'
 import TopNavbar from '../Bars/navbar'
 import imgBg from '../../Images/Home/sclHome.jpg'
+import vidBg from '../../Images/Home/Landing.mp4'
+import mouseIcon from '../../Images/Home/Nav/mouse.gif'
 import AOS from 'aos'
 import logo from '../../Images/Home/LogoTwo.png'
 import NewSlick from './NewSlick'
 import * as Icon from 'react-bootstrap-icons'
+import fb from '../../Images/Home/Icons/FB.svg'
+import whatsapp from '../../Images/Home/Icons/Whatsapp.svg'
+import insta from '../../Images/Home/Icons/Instagram.svg'
+import linked from '../../Images/Home/Icons/Linkdin.svg'
+import FirstRight from './firstRight'
 
 const FirstDiv = () => {
     useEffect(() => {
@@ -14,7 +21,7 @@ const FirstDiv = () => {
 
     const [colorChange, setColorchange] = useState(true);
     const changeNavbarColor = () => {
-        
+
         if (window.scrollY <= 0) {
             setColorchange(true);
         }
@@ -25,27 +32,27 @@ const FirstDiv = () => {
     window.addEventListener('scroll', changeNavbarColor);
     return (
         <div className='HomeStyle'>
+            <div className='mainVid'>
+                <video src={vidBg} autoPlay muted loop className='myVideo'/>
+            </div>
             <div
-                style={{
-                    backgroundImage: `url(${imgBg})`,
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}
-                className='HomeBgClass'
+
             >
                 <div className='contentDiv d-flex justify-content-start align-items-center '>
-                    <div className='theDetails px-3'>
+                    <div className='theDetails px-2'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-md-8'>
+                                <div className='col-md-7 topLeft'>
                                     <img src={logo} alt="logo" className='topLogo' />
-                                    <p className='paraOne' data-aos="zoom-in">Al-Azhar National Collage</p>
+                                    <p className='font3'>
+                                        SINCE 1937
+                                    </p>
                                     <h1 className='headingOne' data-aos="zoom-in">OLD BOYS ASSOCIATION</h1>
-                                    <p data-aos="zoom-out-up">
-                                        Online Grammar and Writing Checker To Help You Deliver Impeccable, Mistake-free Writing.
-                                        Grammarly Has a Tool For Just About Every Kind Of Writing You Do.
-                                        Try It Out For Yourself! Eliminate Grammar Errors. Improve Word Choice
+
+                                    <p data-aos="zoom-out-up" className='font4 aboutSchoolSec'>
+                                        Join the Al Azhar Central College's Old Boys’
+                                        Association and give back to the school that has given us
+                                        so much. Celebrate camaraderie and shape the future.
                                     </p>
                                     <button className='btn btn-default btnComm'
                                         data-aos="fade-right"
@@ -53,41 +60,55 @@ const FirstDiv = () => {
                                         data-aos-duration="500"
                                     >Learn More</button>
                                 </div>
-                                <div className='col-md-4 d-flex justify-content-center align-items-center'>
-                                    <NewSlick />
+                                <div className='col d-flex justify-content-center align-items-center'>
+                                    {/*<NewSlick />*/}
+                                    <FirstRight />
                                 </div>
                             </div>
 
                         </div>
+                    
                         <div className='container'>
-                            <div className='row myRow bottomLine'>
-                                <div className='col-md-6 col-sm-6 d-flex justify-content-start align-items-center'>
+                            <div className='row myRow bottomLine '>
+                                <div className='col-md-4 col-sm-6 d-flex justify-content-start align-items-center'>
 
-                                    <div className='col'>
+                                    <div className='col d-none d-sm-block '>
                                         <div className='iconDiv d-flex justify-content-center align-items-center'>
-                                            <Icon.Facebook size={25} />
+                                            <img src={fb}
+                                                alt="fb"
+                                                className='icon fbicon'
+                                            />
                                         </div>
                                     </div>
-                                    <div className='col'>
+                                    <div className='col d-none d-sm-block'>
                                         <div className='iconDiv d-flex justify-content-center align-items-center'>
-                                            <Icon.Instagram size={25} />
+                                            <img src={insta}
+                                                alt="insta"
+                                                className='icon instaicon'
+                                            />
                                         </div>
                                     </div>
-                                    <div className='col'>
+                                    <div className='col d-none d-sm-block'>
                                         <div className='iconDiv d-flex justify-content-center align-items-center'>
-                                            <Icon.Linkedin size={25} />
+                                            <img src={linked}
+                                                alt="fb"
+                                                className='icon linkedinicon'
+                                            />
                                         </div>
                                     </div>
-                                    <div className='col'>
+                                    <div className='col d-none d-sm-block'>
                                         <div className='iconDiv d-flex justify-content-center align-items-center'>
-                                            <Icon.Whatsapp size={25} />
+                                            <img src={whatsapp}
+                                                alt="whats"
+                                                className='icon whatsappicon'
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-6 col-sm-6 d-flex justify-content-center align-items-center'>
                                     <span className='d-none d-sm-block'>
-                                        <div className={colorChange ? 'mouseDiv mb-3 p-2 d-flex justify-content-center align-items-center' : 'mouseIconCustom mb-3 p-2'}>
-                                            <Icon.Mouse className='mouseIcon' size={40} />
+                                        <div className={colorChange ? 'mouseDiv mb-3 p-2 ' : 'mouseIconCustom mb-3 p-2'}>
+                                            <img src={mouseIcon} className='mouseIcon' alt='mouse' />
                                         </div>
                                     </span>
 

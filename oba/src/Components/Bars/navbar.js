@@ -23,10 +23,9 @@ const TopNavbar = () => {
     return (
         <>
             {['md'].map((expand) => (
-                <Navbar key={expand} expand={expand} className={colorChange ? 'navbar colorChange mb-3 p-2' : 'navbarCustom mb-3 p-2'} fixed="top" >
+                <Navbar key={expand} expand={expand} className='navbar  navbarCustom mb-3 p-2' >
                     <Container fluid>
                         <Navbar.Brand href="#" className='obaTopic'>
-                            <span className='d-none d-sm-block'>OBA</span>
                             <img src={homeIcon}
                                 alt="home icon"
                                 className='homeIcon col-sm-1 d-lg-none'

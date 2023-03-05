@@ -3,6 +3,7 @@ import TopNavbar from '../Components/Bars/navbar'
 import { motion } from 'framer-motion'
 import { MutatingDots } from 'react-loader-spinner'
 import imgLogo from '../Images/Home/Logo.png'
+import TopSet from '../Components/School/topSet'
 
 const School = () => {
     const [loading, setLoading] = useState(false);
@@ -46,6 +47,7 @@ const School = () => {
                         exit={{ opacity: 1 }}
                     >
                         <TopNavbar />
+                        <TopSet />
                     </motion.div>
             }
 

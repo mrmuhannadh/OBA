@@ -52,7 +52,7 @@ const Oba_media = () => {
                         exit={{ opacity: 1 }}
                     >
                         <TopNavbar className='topNavStyle' />
-                        <LeftSet />
+                        <LeftSet  className='leftMem' />
                         <Footer />
                     </motion.div>
             }

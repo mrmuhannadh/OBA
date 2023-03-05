@@ -10,6 +10,8 @@ import UpButton from '../Components/OtherButtons/UpButton'
 import '../Style/Home.css'
 import imgLogo from '../Images/Home/Logo.png'
 import imgBg from '../Images/Home/sclHome.jpg'
+import NewSlider from '../Components/Home/NewSlider'
+import SectionThree from '../Components/Home/SectionThree'
 
 const Index = () => {
     const [loading, setLoading] = useState(false);
@@ -56,12 +58,17 @@ const Index = () => {
                         exit={{ opacity: 1 }}
                     >
                         <FirstDiv />
-                       {/* 
+                        {/* 
                         <VandM />
                     
                         <Slider />
-                        <Events />
+                        
                         */}
+
+                        
+                        <SectionThree />
+                        <NewSlider />
+                        <Events />
                         <Footer />
                         <UpButton />
                     </motion.div>

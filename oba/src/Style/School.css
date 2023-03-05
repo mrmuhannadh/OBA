@@ -1,0 +1,99 @@
+.rowOne {
+    position: relative;
+    margin-top: 15vh;
+    gap: 20px;
+}
+
+.myBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFFFFF;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    min-width: 490px;
+    min-height: 200px;
+}
+
+.insideBox {
+
+    padding: 0px;
+    gap: 50px;
+    width: 329px;
+    height: 120px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.imgInBox {
+    position: relative;
+    width: 45%;
+}
+
+.myPara {
+    background: red !important;
+}
+
+.signature {
+    color: #051320;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.head3Msg {
+    font-weight: 700;
+}
+
+.head2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.myDivRow {
+    position: relative;
+    min-width: 616px;
+    min-height: 680px;
+}
+
+.myDiv {
+    position: absolute;
+    min-height: fit-content;
+    min-height: 100%;
+    height: 100%;
+    width: 50%;
+}
+
+.myDiv2 {
+    background: #051320;
+    box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    position: absolute;
+    right: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px;
+
+}
+
+.imgOnSlider {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.1));
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
