@@ -1,7 +1,6 @@
 import React from 'react'
 import TopNavbar from '../Bars/navbar'
 import '../../Style/media.css'
-import Marquee from "react-fast-marquee";
 import img1 from '../../Images/Media/myimage.png'
 import Slider from "react-slick";
 
